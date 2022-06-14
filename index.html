@@ -33,8 +33,16 @@
 
 <body>
   <div class="container">
-    <a href="/blog/">Ertsul's Blog &raquo; </a>
+    <a id="blog-link" href="/blog/">Ertsul's Blog &raquo; </a>
   </div>
 </body>
+<script>
+  window.onload = function () {
+    setTimeout(() => {
+      const blogLink = document.getElementById('blog-link')
+      blogLink.click()
+    }, 100);
+  }
+</script>
 
 </html>
